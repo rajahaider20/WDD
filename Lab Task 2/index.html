@@ -5,12 +5,12 @@
     <title>Class Web Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
+        /* Your CSS (unchanged) */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
         }
-        /* Header */
         .header {
             background-color: white;
             padding: 10px 20px;
@@ -22,7 +22,6 @@
         .logo img {
             width: 150px;
         }
-       
         .nav-container {
             display: flex;
             align-items: center;
@@ -36,7 +35,6 @@
             border-radius: 30px;
             overflow: hidden;
             padding: 11px;
-            
         }
         .nav-links a {
             text-decoration: none;
@@ -46,7 +44,6 @@
             padding: 8px 20px;
             transition: background-color 0.3s, color 0.3s;
         }
-       
         .nav-links a:hover {
             background-color: #ff8632;
             color: white;
@@ -64,7 +61,6 @@
             border-radius: 20px;
             font-weight: bold;
         }
-        /* Welcome Section */
         .welcome-section {
             background-color: #f9f9e9;
             padding: 40px 20px;
@@ -72,7 +68,6 @@
             padding-left: 100px;
             padding-right: 100px;
             font-weight: 400;
-            vertical-align: center;
         }
         .welcome-text {
             width: 50%;
@@ -93,7 +88,6 @@
             text-decoration: none;
             display: inline-block;
             border-radius: 20px;
-            b
         }
         .welcome-image {
             width: 40%;
@@ -103,7 +97,6 @@
             width: 100%;
             border-radius: 20px;
         }
-        /* Black Middle Section */
         .middle-text {
             background-color: black;
             color: white;
@@ -111,7 +104,6 @@
             padding: 30px 60px;
             font-size: 40px;
         }
-        /* Contact Section */
         .contact-section {
             background-color: #f9f9e9;
             padding: 30px 0px;
@@ -160,7 +152,6 @@
             cursor: pointer;
             border-radius: 20px;
         }
-        /* Footer */
         .footer {
             background-color: black;
             color: white;
@@ -174,7 +165,9 @@
 
     <!-- Header -->
     <div class="header">
-        <div class="logo"><img src="/Task 2 Assets/logo.png" alt="logo"></span></div>
+        <div class="logo">
+            <img src="Task 2 Assets/logo.png" alt="logo">
+        </div>
 
         <div class="nav-container">
             <div class="nav-links">
@@ -215,27 +208,27 @@
             <iframe 
                 loading="lazy" 
                 allowfullscreen 
-                src="https://maps.google.com/maps?q=software+engineering+department+ajk+university+muzaffarabad+ajk&output=embed">
+                src="https://maps.google.com/maps?q=software+engineering+department+ajk+university+muzaffarabad+ajk&amp;output=embed">
             </iframe>
         </div>
         <div class="form">
             <h2>Get in Touch with the Instructor</h2>
             <br>
-            <form>
-                Have questions about lectures, labs, or assignments? Use the form below to contact your instructor or TA. We're here to support your learning journey.
-                <br>
-                <label><strong>Name</strong>:</label>
-                <input type="text" name="name">
+            <form action="#" method="post">
+                <p>Have questions about lectures, labs, or assignments? Use the form below to contact your instructor or TA. We're here to support your learning journey.</p>
                 
-                <label><strong>Email</strong>:</label>
-                <input type="email" name="email">
-                
-                <label><strong>Tel</strong>:</label>
-                <input type="text" name="tel">
-                
-                <label><strong>Message</strong>:</label>
-                <input type="message" name="message">
-                
+                <label for="name"><strong>Name</strong>:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email"><strong>Email</strong>:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="tel"><strong>Tel</strong>:</label>
+                <input type="tel" id="tel" name="tel">
+
+                <label for="message"><strong>Message</strong>:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
                 <button type="submit">Submit</button>
             </form>
         </div>
