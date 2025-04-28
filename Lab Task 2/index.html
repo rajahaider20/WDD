@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Web Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Header */
+        .header {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .logo img {
+            width: 150px;
+        }
+       
+        .nav-container {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+        }
+        .nav-links {
+            display: flex;
+            background-color: #f9f9f9;
+            border: 2px solid black;
+            border-radius: 30px;
+            overflow: hidden;
+            padding: 11px;
+            
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+       
+        .nav-links a:hover {
+            background-color: #ff8632;
+            color: white;
+            border-radius: 20px;
+        }
+        .contact-button {
+            margin-left: auto;
+            border-radius: 20px;
+        }
+        .contact-button a {
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        /* Welcome Section */
+        .welcome-section {
+            background-color: #f9f9e9;
+            padding: 40px 20px;
+            overflow: hidden;
+            padding-left: 100px;
+            padding-right: 100px;
+            font-weight: 400;
+            vertical-align: center;
+        }
+        .welcome-text {
+            width: 50%;
+            float: left;
+        }
+        .welcome-text h1 {
+            font-size: 36px;
+        }
+        .welcome-text p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .start-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff8632;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 20px;
+            b
+        }
+        .welcome-image {
+            width: 40%;
+            float: right;
+        }
+        .welcome-image img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        /* Black Middle Section */
+        .middle-text {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px 60px;
+            font-size: 40px;
+        }
+        /* Contact Section */
+        .contact-section {
+            background-color: #f9f9e9;
+            padding: 30px 0px;
+            overflow: hidden;
+            height: 500px;
+        }
+        .map {
+            width: 50%;
+            float: left;
+            position: relative;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
+        }
+        .map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .form {
+            width: 45%;
+            float: right;
+        }
+        .form h2 {
+            font-size: 24px;
+        }
+        .form label {
+            display: block;
+            margin-top: 10px;
+        }
+        .form input, .form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+        .form button {
+            padding: 10px 20px;
+            background-color: #ff8632;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        /* Footer */
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo"><img src="/Task 2 Assets/logo.png" alt="logo"></span></div>
+
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Lectures</a>
+                <a href="#">Labs</a>
+                <a href="#">Student Work</a>
+                <a href="#">Resources</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+
+        <div class="contact-button">
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+        <div class="welcome-text">
+            <h1>Welcome to Our Class Web Portal</h1>
+            <p>This site is part of our practical learning journey in web development. Here, students learn HTML, CSS (including floats), forms, and responsive design by building and contributing to this platform.</p>
+            <a href="#" class="start-button">Start Exploring</a>
+        </div>
+        <div class="welcome-image">
+            <img src="Task 2 Assets/hero-image.jpg" alt="Man Working on Computer">
+        </div>
+    </div>
+
+    <!-- Black Middle Section -->
+    <div class="middle-text">
+        This isn’t just a website — it’s a learning journey. Here, students document what they learn and build.
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="map">
+            <iframe 
+                loading="lazy" 
+                allowfullscreen 
+                src="https://maps.google.com/maps?q=software+engineering+department+ajk+university+muzaffarabad+ajk&output=embed">
+            </iframe>
+        </div>
+        <div class="form">
+            <h2>Get in Touch with the Instructor</h2>
+            <br>
+            <form>
+                Have questions about lectures, labs, or assignments? Use the form below to contact your instructor or TA. We're here to support your learning journey.
+                <br>
+                <label><strong>Name</strong>:</label>
+                <input type="text" name="name">
+                
+                <label><strong>Email</strong>:</label>
+                <input type="email" name="email">
+                
+                <label><strong>Tel</strong>:</label>
+                <input type="text" name="tel">
+                
+                <label><strong>Message</strong>:</label>
+                <input type="message" name="message">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        All rights reserved ©2025
+    </div>
+
+</body>
+</html>
