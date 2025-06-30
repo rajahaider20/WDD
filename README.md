@@ -12,6 +12,6 @@ Page Link : https://raw.githack.com/rajahaider20/WDD/main/Task%203/index.html
 Page Link : https://raw.githack.com/rajahaider20/WDD/main/Lab%20Task%204/index.html
 
 ## Lab Task 05
-Page Link : 
+Page Link : https://raw.githack.com/rajahaider20/WDD/main/Lab%20task%205/index.html
 
 ## Lab Task 06
