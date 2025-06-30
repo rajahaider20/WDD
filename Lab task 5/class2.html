@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            animation-name: translationanimation;
+            animation-duration: 3s;
+            animation-timing-function: linear;   
+            animation-iteration-count: 2;
+            /* animation-fill-mode: forwards; */
+            animation-direction: alternate;
+        }
+
+        @keyframes translationanimation {
+            0%{
+                background-color: red;
+            }
+            25%{
+                background-color: aqua;
+            }
+            50%{
+                background-color: orange;
+            }
+            75%{
+                background-color: brown;
+            }
+            100%{
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

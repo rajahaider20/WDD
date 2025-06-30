@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+    .box {
+        width: 100%;
+        background-color: teal;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        padding: 50px 0px ;
+    }
+
+    @media (min-width:480px){
+        .box{
+            background-color: red;
+        }
+    }
+    @media (min-width:768px){
+        .box{
+            background-color: orange;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+         Try resizing me (NO viewport tag)!
+     </div>
+</body>
+</html>
